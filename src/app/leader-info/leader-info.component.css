@@ -1,0 +1,66 @@
+:host{
+    font-family: 'Times New Roman', Times, serif;
+}
+.card {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  background-color: #fdf8f8;             
+}
+
+.card h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.motto {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #fdf8f8;
+}
+
+.pokemon-card {
+  text-align: center;
+  
+}
+
+.pokemon-card img {
+  width: 60px;             
+  height: 60px;
+  object-fit: contain;
+}
+
+button {
+  margin-top: auto;          
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #053c74;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #190a99;
+}

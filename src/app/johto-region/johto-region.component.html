@@ -1,0 +1,18 @@
+<div class="background-container">
+  <h1>Johto Region</h1>
+  <div class="status-box">{{ message() }}</div>
+  <div class="card-grid">
+    @for (leader of  johtoleaders; track leader.Name){
+      <app-leader-info
+        [name]="leader.Name"
+        [age]="leader.Age"
+        [badge]="leader.Badge"
+        [location]="leader.Location"
+        [motto]="leader.Motto"
+        [description]="leader.Description"
+        [pokemon]="leader.pokemon"
+        (leaderSelected)="onLeaderSelected($event)">
+      </app-leader-info>
+    }
+  </div>
+</div>

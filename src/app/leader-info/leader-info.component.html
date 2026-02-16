@@ -1,0 +1,20 @@
+<div class="card">
+    <h2>{{ name() }}</h2>
+    <p><strong>Age:</strong> {{ age() }}</p>
+    <p><strong>Location:</strong> {{ location() }}</p>
+    <p><strong>Motto:</strong> {{ motto() }}</p>
+    
+
+    <h4>Pokemon Team:</h4>
+    <div class="pokemon-grid">
+        @for (p of pokemon(); track p.Pname) {
+            <div class="pokemon-card">
+                <img [src]="p.image" [alt]="p.Pname">
+                <p>{{ p.Pname }}</p>
+                <small>Level {{ p.Plevel }}</small>
+            </div>
+        }
+    </div>
+    
+    <button (click) = "selectLeader()">Select Leader</button>
+</div>

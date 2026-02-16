@@ -1,0 +1,29 @@
+<div class="background-container">
+    <section class="home-section">
+        <h1 class="home-title">History of Kanto and Johto region</h1>
+        @for (home of history(); track home.kanto) {
+            <div class="knato-johto-box">
+                <div class="kanto">
+                    <h2>Kanto Region</h2>
+                    <p>
+                    {{ home.kanto }}
+                    </p>
+                </div>
+
+                <div class="johto">
+                    <h2>Johto Region</h2>
+                    <p>
+                    {{ home.johto }}
+                    </p>
+                </div>
+
+            </div>
+
+    }
+
+    </section>
+        
+
+</div>
+
+
