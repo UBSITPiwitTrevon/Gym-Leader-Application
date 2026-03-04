@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Hoenn Region</h1>
+    <div class="card-grid">
+        @for (leaders of trainerService.trainers(); track leaders.Name){
+            <div class="card">
+                <h2>{{leaders.Name}}</h2>
+                <p><strong>Location:</strong>{{leaders.location}}</p>
+                <p><strong>Specialty:</strong>{{leaders.specialty}}</p>
+                <p><strong>Badge:</strong>{{leaders.Badge}}</p>
+                <h3>Pokemon Team</h3>
+                
+            </div>
+        }
+
+    </div>
+    
+        
+</div>
