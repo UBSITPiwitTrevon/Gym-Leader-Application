@@ -8,7 +8,17 @@
                 <p><strong>Specialty:</strong>{{leaders.specialty}}</p>
                 <p><strong>Badge:</strong>{{leaders.Badge}}</p>
                 <h3>Pokemon Team</h3>
-                
+                <div class="pokemon-grid">
+                    
+                    @for(team of leaders.pokemon; track $index){
+                        <div class="pokemon-card">
+                            <img [src]="team.image" [alt]="team.Pname">
+                            <p>{{ team.Pname }}</p>
+                            <small>Level {{ team.Plevel }}</small> 
+                        </div>
+
+                    }
+                </div>
             </div>
         }
 
